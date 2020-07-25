@@ -58,7 +58,7 @@ public class InputTilt : MonoBehaviour
         // -18 to 18 degrees
         inputTiltAngle *= 1 / 5f;
 
-        _target.rotation = Quaternion.Lerp(_target.rotation, Quaternion.Euler(inputTiltAngle), 0.9f);
+        _target.rotation = Quaternion.Lerp(_target.rotation, Quaternion.Euler(inputTiltAngle), 0.5f);
 
         // 
         // _follow._offsetDirection.y = -inputPositionY;
